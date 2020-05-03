@@ -5,11 +5,11 @@
 #START
 TIME=`date +%I-%M-%b-%d-%y`               # Date to add filename
 SRCDIR=$HOME                              # Location of Important Data 
-IMDIR=cert								  # Important Dir Name
-FILENAME=backup-$TIME-$IMDIR.tar    	  # Backup Format
-DESDIR=/home/ynm/backup          		  # Destination of backup file (safe place)
+IMDIR=cert                                # Important Dir Name
+FILENAME=backup-$TIME-$IMDIR.tar          # Backup Format
+DESDIR=/home/ynm/backup                   # Destination of backup file (safe place)
 cd $SRCDIR	&& tar -cvf $FILENAME $IMDIR  # Enter to dest folder
-mv *.tar $DESDIR						  # Move Arhive to safe place
+mv *.tar $DESDIR                          # Move Arhive to safe place
 #END
 
 
